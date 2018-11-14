@@ -1,0 +1,32 @@
+agent = Agent(state_size=state_size, action_size=action_size, seed=0)
+scores = dqn(agent)
+
+
+Episode 100	Average Score: 0.04
+Episode 200	Average Score: 0.61
+Episode 300	Average Score: 1.51
+Episode 400	Average Score: 2.27
+Episode 500	Average Score: 3.53
+Episode 600	Average Score: 4.16
+Episode 700	Average Score: 5.52
+Episode 800	Average Score: 5.90
+Episode 900	Average Score: 7.19
+Episode 1000	Average Score: 7.48
+Episode 1100	Average Score: 8.33
+Episode 1200	Average Score: 8.48
+Episode 1300	Average Score: 8.90
+Episode 1400	Average Score: 10.06
+Episode 1500	Average Score: 10.64
+Episode 1600	Average Score: 10.83
+Episode 1700	Average Score: 10.81
+Episode 1800	Average Score: 10.91
+Episode 1900	Average Score: 11.38
+Episode 2000	Average Score: 12.40
+Episode 2100	Average Score: 12.61
+Episode 2154	Average Score: 13.02
+Environment solved in 2054 episodes!	Average Score: 13.02
+
+agent = Agent(state_size=state_size, action_size=action_size, seed=0, filename='checkpoint_dqn.pth')
+scores = dqn(agent, n_episodes=100, train=False)
+Episode 8	Average Score: 13.50
+When finished, you can close the environment.
